@@ -6,6 +6,7 @@
         "system_error": "cpp",
         "thread": "cpp",
         "typeindex": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "iostream": "cpp"
     }
 }

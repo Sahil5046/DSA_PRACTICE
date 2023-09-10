@@ -1,26 +1,24 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
+void pattern1(int n)
 {
-    int n;
-    cin >> n;
-    int colNo;
-
-    for (int i = 1; i <= n * 2; i++)
+    for(int i = 1; i <= n; i++)
     {
-        if (i > n)
-        {
-            colNo = 2 * n - i;
-        }
-        else
-        {
-            colNo = i;
-        }
-        for (int j = 1; j <= colNo; j++)
+        for(int j = 1; j <= n; j++)
         {
             cout << "* ";
         }
         cout << endl;
     }
+}
+
+int main()
+{
+  int n;
+  cout << "Enter the number : ";
+  cin >> n;
+
+  pattern1(n);
+
 }

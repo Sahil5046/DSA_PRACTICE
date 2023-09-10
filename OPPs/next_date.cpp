@@ -68,7 +68,7 @@ date nextDate(date d)
         if (d.mon % 2 == 0)
         {
             temp.day = d.day + 1;
-            temp.mon = d.mon + 1;
+            temp.mon = d.mon;
         }
         else
         {

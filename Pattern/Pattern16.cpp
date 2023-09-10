@@ -1,13 +1,19 @@
+// Enter the number : 4
+// A 
+// A B 
+// A B C 
+// A B C D 
+
 #include <bits/stdc++.h>
 using namespace std;
 
-void pattern2(int n)
+void pattern(int n)
 {
     for(int i = 1; i <= n; i++)
     {
-        for(int j = 1; j <= i; j++)
+        for(char j = 1; j <= i; j++)
         {
-            cout << "* ";
+            cout << (char)(65 + j - 1) << " ";
         }
         cout << endl;
     }
@@ -19,6 +25,5 @@ int main()
   cout << "Enter the number : ";
   cin >> n;
 
-  pattern2(n);
-
+  pattern(n);
 }

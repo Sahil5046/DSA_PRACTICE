@@ -1,0 +1,34 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void pattern(int n)
+{
+    for(int i = 1; i <= n; i++)
+    {
+        for(int k = 1; k <= (n - i); k++)
+        {
+            cout << " ";
+        }
+
+        for(int j = 1; j <= (2 * i - 1); j++)
+        {
+            cout << "*";
+        }
+
+        for(int l = 1; l <= (n - i); l++)
+        {
+            cout << " ";
+        }
+        cout << endl;
+    }
+}
+
+int main()
+{
+  int n;
+  cout << "Enter the number : ";
+  cin >> n;
+
+  pattern(n);
+
+}
